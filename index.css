@@ -1,0 +1,89 @@
+.main-container {
+  position: absolute;
+  bottom: 10%;
+  width: 30%;
+  height: max-content;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 50px;
+  background-color: rgb(211, 244, 215);
+  margin-left: 10px;
+}
+
+.bg-img {
+  bottom: 20px;
+  right: 50px;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+button {
+  width: 80%;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgb(54, 180, 54);
+}
+
+button:hover {
+  background-color: rgb(13, 71, 13);
+}
+
+.plane-image {
+  position: relative;
+  width: 20%;
+  top: 20%;
+}
+
+input[type="text"] {
+  width: 70%;
+  text-align: -webkit-center;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.rotate-plane {
+  width: 15%;
+  position: relative;
+  margin: 50px 0 0 30px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.result {
+  font-size: 50px;
+}
+
+.cancel-icon {
+  border-radius: 10px;
+  padding: 0 5px 0 5px;
+  font-size: 25px;
+  color: rgb(9, 7, 7);
+  background-color: rgb(155, 218, 197);
+  cursor: pointer;
+}
+
+.cancel-icon:hover {
+  background-color: rgb(126, 234, 198);
+}
